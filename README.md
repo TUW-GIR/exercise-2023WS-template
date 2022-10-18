@@ -18,11 +18,11 @@ The data contains around 25.000 crawled Wikipedia pages of English-speaking movi
 
 Your very first task is to clone the repository to your local machine, fill out your student id [here](ir_exercise/test/test_pre_task.py) and push it back to GitHub. There's a GitHub action attached to this repository that you can access on GitHub by clicking `Actions`. After pushing your filled out student id, the workflow run should be green. 
 
-### Queries
+## Queries
 
 During the exercise, you have to improve the starter system to satisfy the following queries.
 
-#### Milestone 1
+### Milestone 1
 
 ```json
 [
@@ -49,7 +49,7 @@ During the exercise, you have to improve the starter system to satisfy the follo
 ]
 ```
 
-#### Milestone 2
+### Milestone 2
 
 ```json
 [
