@@ -3,10 +3,10 @@ import unittest
 from ir_exercise.test.utils import send_request
 
 
-class GladiatorTest(unittest.TestCase):
+class TroyTest(unittest.TestCase):
     def setUp(self) -> None:
-        self.text = "Russell Crowe in roman age"
-        self.gold = "Gladiator (2000 film)"
+        self.text = "Brad Pitt in Ancient Greece"
+        self.gold = "Troy (film)"
 
     def test_top_10(self):
         docs = send_request(self.text, 10)
@@ -21,10 +21,10 @@ class GladiatorTest(unittest.TestCase):
         self.assertIn(self.gold, docs)
 
 
-class DunkirkTest(unittest.TestCase):
+class CastAway(unittest.TestCase):
     def setUp(self) -> None:
-        self.text = "Oscar winning Christopher Nolan movie about 2nd world war"
-        self.gold = "Dunkirk (2017 film)"
+        self.text = "Academy Award winning Tom Hangs on uninhabted island"
+        self.gold = "Cast Away"
 
     def test_top_10(self):
         docs = send_request(self.text, 10)
@@ -39,10 +39,10 @@ class DunkirkTest(unittest.TestCase):
         self.assertIn(self.gold, docs)
 
 
-class FirstManTest(unittest.TestCase):
+class OverTheHedgeTest(unittest.TestCase):
     def setUp(self) -> None:
-        self.text = "moon landing movie with Ryan Gostling"
-        self.gold = "First Man (film)"
+        self.text = "RJ the racoon steals snack food"
+        self.gold = "Over the Hedge (film)"
 
     def test_top_10(self):
         docs = send_request(self.text, 10)
@@ -57,10 +57,10 @@ class FirstManTest(unittest.TestCase):
         self.assertIn(self.gold, docs)
 
 
-class TheMartianTest(unittest.TestCase):
+class BeethovenTest(unittest.TestCase):
     def setUp(self) -> None:
-        self.text = "an astronaut is left on the Mars, it was shot in Budapest"
-        self.gold = "The Martian (film)"
+        self.text = "2001 family comedy featuring St. Bernard"
+        self.gold = "Beethoven's 4th (film)"
 
     def test_top_10(self):
         docs = send_request(self.text, 10)
@@ -75,10 +75,10 @@ class TheMartianTest(unittest.TestCase):
         self.assertIn(self.gold, docs)
 
 
-class BeautifulMindTest(unittest.TestCase):
+class RoyalChristmasTest(unittest.TestCase):
     def setUp(self) -> None:
-        self.text = "beautiful mi"
-        self.gold = "A Beautiful Mind (film)"
+        self.text = "Royal Ch"
+        self.gold = "A Royal Christmas"
 
     def test_top_10(self):
         docs = send_request(self.text, 10)
@@ -95,3 +95,4 @@ class BeautifulMindTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
