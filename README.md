@@ -1,8 +1,8 @@
-# GIR Exercise 2022W
+# GIR Exercise 2023W
 
 ## Exercise overview
 
-This is the repository for the exercise of [Grundlagen des Information Retrieval (2022)](https://tiss.tuwien.ac.at/course/courseDetails.xhtml?dswid=1366&dsrid=63&courseNr=188977&semester=2022W). 
+This is the repository for the exercise of [Grundlagen des Information Retrieval (2023)](https://tiss.tuwien.ac.at/course/courseDetails.xhtml?dswid=1366&dsrid=63&courseNr=188977&semester=2023W). 
 
 The aim of this exercise is to improve a minimum viable search engine, such that it returns the right documents for predefined user queries.
 
@@ -27,24 +27,24 @@ During the exercise, you have to improve the starter system to satisfy the follo
 ```json
 [
   { 
-      "query":  "Russell Crowe in roman age",
-      "expected_result":  "Gladiator (2000 film)"
+      "query":  "Brad Pitt in Ancient Greece",
+      "expected_result":  "Troy (film)"
   },
   { 
-      "query": "Oscar winning Christopher Nolan movie about 2nd world war",
-      "expected_result": "Dunkirk (2017 film)"
+      "query": "Academy Award winning Tom Hangs on uninhabted island",
+      "expected_result": "Cast Away"
   },
   { 
-      "query": "moon landing movie with Ryan Gostling",
-      "expected_result": "First Man (film)"
+      "query": "RJ the racoon steals snack food",
+      "expected_result": "Over the Hedge (film)"
   },
   { 
-      "query": "an astronaut is left on the Mars, it was shot in Budapest",
-      "expected_result": "The Martian (film)"
+      "query": "2001 family comedy featuring St. Bernard",
+      "expected_result": "Beethoven's 4th (film)"
   },
   { 
-      "query": "beautiful mi",
-      "expected_result": "A Beautiful Mind (film)"
+      "query": "Royal Ch",
+      "expected_result": "A Royal Christmas"
   }
 ]
 ```
@@ -54,24 +54,24 @@ During the exercise, you have to improve the starter system to satisfy the follo
 ```json
 [
   { 
-      "query":  "12 districts fighting in a deathly game",
-      "expected_result":  "The Hunger Games (film)"
+      "query":  "dive in sea resort",
+      "expected_result":  "The Red Sea Diving Resort"
   },
   { 
-      "query": "no mas bebes",
-      "expected_result": "No más bebés"
+      "query": "Mission Impossible 3",
+      "expected_result": "Mission: Impossible III"
   },
   { 
-      "query": "It",
-      "expected_result": "It (2017 film)"
+      "query": "21",
+      "expected_result": "21 (2008 film)"
   },
   { 
-      "query": "2014 american coming-of-age romance based on a novel",
-      "expected_result": "The Fault in Our Stars (film)"
+      "query": "failed suicide attempt leads to STEM implant",
+      "expected_result": "Upgrade (film)"
   },
   { 
-      "query": "documentary about women in STEM",
-      "expected_result": "Picture a Scientist"
+      "query": "biography featuring Edgar Ramirez, Demian Bichir",
+      "expected_result": "Che (2008 film)"
   }
 ]
 ```
@@ -94,9 +94,9 @@ You can/should run the tests on your own to see how far you are:
 
 ## Deadlines
 
-- 18.10.22: Hand-out
-- 29.11.22 Milestone 1 Hand-in 
-- 17.1.23 Final Hand-in (Milestone 2)
+- 24.10.23: Hand-out
+- 28.11.23 Milestone 1 Hand-in 
+- 16.01.24 Final Hand-in (Milestone 2)
 
 ## Start the search engine system
 
@@ -203,10 +203,10 @@ pytest ir_exercise/test/test_milestone_*.py
 
 ```bash
 # All tests from a test class
-pytest ir_exercise/test/test_milestone_1.py -k GladiatorTest
+pytest ir_exercise/test/test_milestone_1.py -k TroyTest
 
 # Only one test
-pytest ir_exercise/test/test_milestone_1.py::GladiatorTest::test_top_1
+pytest ir_exercise/test/test_milestone_1.py::TroyTest::test_top_1
 ```
 
 ## Troubleshooting
