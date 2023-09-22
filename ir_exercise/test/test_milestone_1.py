@@ -21,7 +21,7 @@ class TroyTest(unittest.TestCase):
         self.assertIn(self.gold, docs)
 
 
-class CastAway(unittest.TestCase):
+class CastAwayTest(unittest.TestCase):
     def setUp(self) -> None:
         self.text = "Academy Award winning Tom Hangs on uninhabted island"
         self.gold = "Cast Away"
